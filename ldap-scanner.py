@@ -145,7 +145,7 @@ def main():
     else:
         remote_names.append(remote_name)
 
-    lookup = checker(username, password, domain, int(options.port), options.hashes)
+    lookup = checker(username, password, domain, 389, options.hashes)
     for remote_name in remote_names:
         try:
             lookup.check(remote_name)
