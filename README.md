@@ -31,4 +31,10 @@ authentication:
                         NTLM hashes, format is LMHASH:NTHASH
 ```
 
+# Installation
+
+```
+$ pip install impacket
+$ python3 ldap-scanner.py
+```
 
