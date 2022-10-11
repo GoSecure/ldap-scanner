@@ -5,6 +5,14 @@ The script will establish a connection to the target host(s) and request
 authentication without signature capability. If this is accepted, it means that the target hosts
 allows unsigned LDAP sessions and NTLM relay attacks are possible to this LDAP service (whenever signing is not requested by the client).
 
+# Installation
+
+```
+$ pip install impacket
+$ python3 ldap-scanner.py
+```
+
+
 # Usage
 ```
 [*] ldap scanner by @romcar / GoSecure - Based on impacket by SecureAuth
@@ -30,5 +38,3 @@ authentication:
   -hashes LMHASH:NTHASH
                         NTLM hashes, format is LMHASH:NTHASH
 ```
-
-
